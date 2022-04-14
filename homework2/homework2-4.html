@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+    <meta charset="utf-8">
+    <title>HTML CSS Left Right Split</title>
+    <style>
+      div {
+        width: 100%;
+        height: 500px;
+        border: 0px solid #000000;
+      }
+      div.left {
+        width: 55%;
+        float: left;
+        box-sizing: border-box;
+        background: #ffffff;
+      }
+      div.right {
+        width: 45%;
+        float: right;
+        box-sizing: border-box;
+        background: #ffffff;
+      }
+       table.head {
+        width: 100%;
+        border-top: 0px solid #000000;
+        border-collapse: none;
+        border-style : hidden!important;
+      }
+       tr, td.head {
+        
+        border-bottom: 0px solid #000000;
+        padding: 0px;
+        
+        
+      }
+      
+      table {
+        width: 100%;
+        border-top: 1px solid #000000;
+        border-collapse: collapse;
+      }
+     th, td {
+        border-bottom: 1px solid #000000;
+        padding: 10px;
+        font-weight: bold ;
+      }
+      img {
+                float:left;
+      }
+    </style>
+  </head>
+  <body>
+      <table>
+      <table class = "head">
+          <tbody>
+              <tr>
+              <tr class = "head">
+                <td>
+                <td class = "head">
+                    <h1 style="color: rgb(194, 0, 0);font-size: 50px; "> Stanford Performing Arts</h1>
+                </td> 
+                <td>
+                <td class = "head1">
+                    <h1 style="color: rgb(194, 0, 0);font-size: 15px; float:right; font-size: 20px"> Authumn 2012 <br>Edition</h1>
+                </td>
+              </tr>
+        </tbody>
+      </table>
+    <div>
+      <div class="left">
+        <h1>Bing Concert Hall</h1>
+        <img src="bing_concert_hall.jpg" alt="Bing Concert Hall" width="300" height="200">
+        <h3>Featuring outdoor setting and soaring views, Concord Pavilion is the perfect location 
+            for your next conference, corporate event, fundraiser, private concert or graduation. With access to the world’s 
+            greatest musical entertainment, state-of-the-art lighting and sound, custom menus and mixology, our talented staff 
+            handles every detail, so you don’t have to. 
+            Accommodating up to 12,500 guests, this unique 5,000 square-foot venue will exceed expectations.</h3>
+      </div>
+      <div class="right">
+        <h1>Calender</h1>
+        <table>
+            <tbody>
+              <tr>
+                <td style="font-size: 17px;">Harmony for Humanity: Daniel Pearl World Music Concert</td>
+              </tr>
+              <tr>
+                <td style="font-size: 17px;">Sundays with the St. Lawrence String Quartet</td>
+              </tr>
+              <tr>
+                <td style="font-size: 17px;">Merce Cunningham Dance Company</td>
+              </tr>
+              <tr>
+                <td style="font-size: 17px;">Juilliard String Quartet</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </body>
+</html>
