@@ -41,6 +41,22 @@
                         <h1 class="mx-auto my-0 text-uppercase">전도현의 <br> Home work 3</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">20211521 전도현의 웹사이트 입니다 <br> homework 2,4는 <a href="https://github.com/TSGDLK/TSGDLK.github.io/tree/main">여기에 있습니다.</a><br> </h2>
                         <a class="btn btn-primary" href="#about">가보자고</a>
+                        <script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
                     </div>
                 </div>
             </div>
